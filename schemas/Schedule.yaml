@@ -126,3 +126,7 @@ properties:
         type: array
         description: List of the room(s) of this schedule
         $ref: 'Room.yaml'
+      lecturers:
+        type: array
+        description: List of the lecturers (persons) of this schedule
+        $ref: 'Person.yaml'

@@ -18,9 +18,19 @@ properties:
     type: string
     description: The name of this building
     example: Building 20
+  mtt_name:
+    type: object
+    description: The localized name of this building
+    example:
+      nl: Gebouw 20
+      en: Building 20
   description:
     type: string
     description: The description of this building
+    example: null
+  mtt_description:
+    type: object
+    description: The localized description of this building
     example: null
 #  address:
 #    type: string
@@ -32,7 +42,13 @@ properties:
   city:
     type: string
     description: The city in which this building is located
-    example: London
+    example: The Hague
+  mtt_city:
+    type: object
+    description: The localized in which this building is located
+    example:
+      nl: Den Haag
+      en: The Hague
 #  lat:
 #    type: number
 #    description: The latitude of this building

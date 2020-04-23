@@ -14,6 +14,12 @@ properties:
     type: string
     description: The name of this course (ECTS-Title)
     example: Math 101
+  mtt_name:
+    type: object
+    description: <mark>The localized name of this course (ECTS-Title)</mark>
+    example:
+      nl: Wiskunde 101
+      en: Math 101
   abbreviation:
     type: string
     description: The abbreviation or internal code used to identify this course (ECTS-code)
@@ -27,6 +33,10 @@ properties:
   description:
     type: string
     description: The description of this course (ECTS-description)
+    example: null
+  mtt_description:
+    type: object
+    description: <mark>The localized description of this course (ECTS-Title)</mark>
     example: null
 #  learningOutcomes:
 #    type: string

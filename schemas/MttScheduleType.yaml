@@ -1,0 +1,24 @@
+type: object
+required:
+  - scheduleTypeId
+  - name
+properties:
+  scheduleTypeId:
+    type: string
+    description: Unique id of this schedule type
+    example: EXAM
+  abbreviation:
+    type: string
+    description: The abbreviation or internal code used to identify this schedule type
+    example: EXAM
+  name:
+    type: object
+    description: The name of this schedule type
+    example:
+      nl: Examen
+      en: Exam
+  color:
+    type: string
+    description: The color of this schedule type
+    example: "#ff0000"
+# TODO Could include a _link to self, but we do not need an endpoint to retrieve groups. Therefore, the links are ommitted.

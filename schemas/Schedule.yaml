@@ -30,6 +30,12 @@ properties:
     example:
       nl: Inleiding Lineaire Algebra
       en: Introduction into Linear Algebra
+  mtt_remark1:
+    type: object
+    description: A localized remark for this schedule
+    example:
+      nl: Neem je rekenmachine mee
+      en: Please bring your calculator
   _links:
     type: object
     required:

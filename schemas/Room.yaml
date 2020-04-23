@@ -8,30 +8,35 @@ properties:
   roomId:
     type: string
     description: Unique id for this room
+    example: B20-02-035
   abbreviation:
     type: string
     description: The abbreviation of the name of this room
+    example: B20-02-035
   name:
     type: string
     description: The name of this room
-  type:
-    type: string
-    description: The type of this room (see service metadata for possible values)
+    example: B20-02-035
+#  type:
+#    type: string
+#    description: The type of this room (see service metadata for possible values)
   description:
     type: string
     description: The description of this room
+    example: null
   totalSeats:
     type: integer
     format: int32
     description: The total number of seats located in the room
-  totalWorkspaces:
-    type: integer
-    format: int32
-    description: The total number of workspaces located in the room
-  availableWorkspaces:
-    type: integer
-    format: int32
-    description: The total number of available (=non-reserved) workspaces in the room
+    example: 24
+#  totalWorkspaces:
+#    type: integer
+#    format: int32
+#    description: The total number of workspaces located in the room
+#  availableWorkspaces:
+#    type: integer
+#    format: int32
+#    description: The total number of available (=non-reserved) workspaces in the room
   _links:
     type: object
     required:
@@ -46,18 +51,23 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/rooms/123
-      building:
-        type: object
-        description: Link to the building in which the room is located
-        required:
-          - href
-          - title
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /v3/buildings/123
-          title:
-            type: string
-            description: The name of the building
+            example: /v3/rooms/B20-02-035
+#      building:
+#        type: object
+#        description: Link to the building in which the room is located
+#        required:
+#          - href
+#          - title
+#        properties:
+#          href:
+#            type: string
+#            format: uri
+#            example: /v3/buildings/123
+#          title:
+#            type: string
+#            description: The name of the building
+#  _embedded:
+#    properties:
+#      building:
+#        type: object
+#        description: The building in which the room is located

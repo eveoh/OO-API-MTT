@@ -8,17 +8,21 @@ properties:
   scheduleId:
     type: string
     description: Unique id of this schedule
+    example: 569a9ece-329d-44b9-83c1-cc59464ad8f6
   startDateTime:
     type: string
     description: The moment on which this schedule starts, RFC3339 (date-time)
     format: date-time
+    example: "2020-05-02T13:00:00+02:00"
   endDateTime:
     type: string
     description: The moment on which this schedule ends, RFC3339 (date-time)
     format: date-time
+    example: "2020-05-02T15:00:00+02:00"
   description:
     type: string
     description: The description of this schedule
+    example: Introduction into Linear Algebra
   _links:
     type: object
     required:
@@ -33,68 +37,68 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/schedules/123
-      courseOfferings:
-        type: array
-        description: Links to the coursOfferings affiliated to this schedule
-        items:
-          type: object
-          required:
-            - href
-            - title
-          properties:
-            href:
-              type: string
-              format: uri
-              example: /v3/course-offerings/123
-            title:
-              type: string
-              description: The name of the course offering
-      tests:
-        type: array
-        description: Links to the tests affiliated to this schedule
-        items:
-          type: object
-          required:
-            - href
-            - title
-          properties:
-            href:
-              type: string
-              format: uri
-              example: /v3/tests/123
-            title:
-              type: string
-              description: The name of the test
-      rooms:
-        type: array
-        description: Links to the room(s) of this schedule
-        items:
-          type: object
-          required:
-            - href
-            - title
-          properties:
-            href:
-              type: string
-              format: uri
-              example: /v3/rooms/123
-            title:
-              type: string
-              description: The name of the room
-      lecturers:
-        type: array
-        description: Links to the lecturers (persons) of this schedule
-        items:
-          type: object
-          required:
-            - href
-            - title
-          properties:
-            href:
-              type: string
-              format: uri
-              example: /v3/persons/123
-            title:
-              type: string
-              description: The name of the person
+            example: /v3/schedules/569a9ece-329d-44b9-83c1-cc59464ad8f6
+#      courseOfferings:
+#        type: array
+#        description: Links to the coursOfferings affiliated to this schedule
+#        items:
+#          type: object
+#          required:
+#            - href
+#            - title
+#          properties:
+#            href:
+#              type: string
+#              format: uri
+#              example: /v3/course-offerings/123
+#            title:
+#              type: string
+#              description: The name of the course offering
+#      tests:
+#        type: array
+#        description: Links to the tests affiliated to this schedule
+#        items:
+#          type: object
+#          required:
+#            - href
+#            - title
+#          properties:
+#            href:
+#              type: string
+#              format: uri
+#              example: /v3/tests/123
+#            title:
+#              type: string
+#              description: The name of the test
+#      rooms:
+#        type: array
+#        description: Links to the room(s) of this schedule
+#        items:
+#          type: object
+#          required:
+#            - href
+#            - title
+#          properties:
+#            href:
+#              type: string
+#              format: uri
+#              example: /v3/rooms/123
+#            title:
+#              type: string
+#              description: The name of the room
+#      lecturers:
+#        type: array
+#        description: Links to the lecturers (persons) of this schedule
+#        items:
+#          type: object
+#          required:
+#            - href
+#            - title
+#          properties:
+#            href:
+#              type: string
+#              format: uri
+#              example: /v3/persons/123
+#            title:
+#              type: string
+#              description: The name of the person

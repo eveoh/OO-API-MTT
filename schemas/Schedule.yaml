@@ -122,3 +122,7 @@ properties:
         type: array
         description: List of courseOfferings affiliated to this schedule
         $ref: 'CourseOffering.yaml'
+      rooms:
+        type: array
+        description: List of the room(s) of this schedule
+        $ref: 'Room.yaml'

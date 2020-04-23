@@ -1,6 +1,7 @@
 type: object
 required:
   - courseOfferingId
+  - mtt_name
   - academicYear
   - period
   - course
@@ -9,6 +10,20 @@ properties:
     type: string
     description: Unique id of this course offering
     example: MA-101_2020_S1
+  mtt_abbreviation:
+    type: string
+    description: The abbreviation or internal code used to identify this course offering
+    example: MA-101_2020_S1
+  mtt_name:
+    type: object
+    description: The localized name of this course offering
+    example:
+      nl: Wiskunde 101 - 2020/21 Semester 1
+      en: Math 101 - 2020/21 Semester 1
+  mtt_description:
+    type: object
+    description: The localized description of this course offering
+    example: null
   course:
     type: object
     description: The course object of which this courseOffering is an instance

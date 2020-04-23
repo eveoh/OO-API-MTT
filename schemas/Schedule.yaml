@@ -134,3 +134,8 @@ properties:
         type: object
         description: The schedule type of this schedule
         $ref: 'MttScheduleType.yaml'
+      mtt_groups:
+        type: array
+        description: The groups affiliated to this schedule
+        items:
+          $ref: 'MttGroup.yaml'

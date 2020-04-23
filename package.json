@@ -1,0 +1,20 @@
+{
+  "name": "open-education-api-mtt",
+  "version": "3.0.0",
+  "description": "OpenAPI (fka Swagger) specification for the Open Education API",
+  "main": "index.js",
+  "repository": "git@github.com:open-education-api/specification.git",
+  "author": "Open Education API Working Group <info@openonderwijsapi.nl>",
+  "contributors": [
+    "Marco Krikke <marco@eveoh.nl>"
+  ],
+  "private": true,
+  "devDependencies": {
+    "npm-run-all": "4.1.5",
+    "redoc-cli": "0.9.7"
+  },
+  "scripts": {
+    "serve": "redoc-cli serve --watch --port 3000 spec.yaml"
+  },
+  "dependencies": {}
+}

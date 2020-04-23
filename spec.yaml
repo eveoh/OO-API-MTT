@@ -10,6 +10,13 @@ info:
     - The subset of OO-API schemas and endpoints supported by MyTimetable
     - MyTimetable specific extensions
 
+    # Remarks
+
+    - Clients must return all required properties
+    - Clients may return optional properties
+    - Clients may return other properties, e.g. specified in the full OO-API specification
+
+
     # Hypermedia API
     The Open Education API is designed as a *hypermedia API*. In short, this means all responses will contain hypermedia links
     to simplify the navigation between the different API calls. Each link (except `self`) is optional. When a specific link is

@@ -77,3 +77,11 @@ properties:
 #            type: string
 #            format: uri
 #            example: /v3/schedules?courseOffering=123
+  _embedded:
+    type: object
+    properties:
+      mtt_groups:
+        type: array
+        description: The groups affiliated to this schedule
+        items:
+          $ref: 'MttGroup.yaml'

@@ -20,6 +20,16 @@ properties:
     description: The moment on which this schedule ends, RFC3339 (date-time)
     format: date-time
     example: "2020-05-02T15:00:00+02:00"
+  abbreviation:
+    type: string
+    description: The abbreviation of this schedule
+    example: MA-101_2020_S1_LINALG_TUT01
+  mtt_name:
+    type: object
+    description: The localized name of this schedule
+    example:
+      nl: Lineaire Algebra
+      en: Linear Algebra
   description:
     type: string
     description: The description of this schedule

@@ -1813,6 +1813,35 @@ redoc@2.0.0-rc.24:
     tslib "^1.11.1"
     url-template "^2.0.8"
 
+redoc@2.0.0-rc.27:
+  version "2.0.0-rc.27"
+  resolved "https://maven.eveoh.nl/repository/public-npm/redoc/-/redoc-2.0.0-rc.27.tgz#91e74a6b737299e1254ad983190e1dc73c7561b9"
+  integrity sha512-K72Ea3mtkGSwL2AIEePe/JpO2hpMBZIeaPhJsCSnubh8NxilRn8O6DyDo34quUx1U4Q0dyJOp00PNb73aVoD3Q==
+  dependencies:
+    classnames "^2.2.6"
+    decko "^1.2.0"
+    dompurify "^2.0.8"
+    eventemitter3 "^4.0.0"
+    json-pointer "^0.6.0"
+    json-schema-ref-parser "^6.1.0"
+    lunr "2.3.8"
+    mark.js "^8.11.1"
+    marked "^0.7.0"
+    memoize-one "~5.1.1"
+    mobx-react "6.1.5"
+    openapi-sampler "1.0.0-beta.15"
+    perfect-scrollbar "^1.4.0"
+    polished "^3.4.4"
+    prismjs "^1.19.0"
+    prop-types "^15.7.2"
+    react-dropdown "^1.7.0"
+    react-tabs "^3.1.0"
+    slugify "^1.4.0"
+    stickyfill "^1.1.1"
+    swagger2openapi "^5.3.4"
+    tslib "^1.11.1"
+    url-template "^2.0.8"
+
 reftools@^1.1.0, reftools@^1.1.1:
   version "1.1.1"
   resolved "https://maven.eveoh.nl/repository/public-npm/reftools/-/reftools-1.1.1.tgz#09cff48f62c09cae40bd1fe9683f5412d2a4656d"

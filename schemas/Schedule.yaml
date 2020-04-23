@@ -3,6 +3,7 @@ required:
   - scheduleId
   - startDateTime
   - endDateTime
+  - description
   - _links
 properties:
   scheduleId:
@@ -23,6 +24,12 @@ properties:
     type: string
     description: The description of this schedule
     example: Introduction into Linear Algebra
+  mtt_description:
+    type: object
+    description: The localized description of this schedule
+    example:
+      nl: Inleiding Lineaire Algebra
+      en: Introduction into Linear Algebra
   _links:
     type: object
     required:

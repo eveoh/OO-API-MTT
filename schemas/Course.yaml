@@ -78,6 +78,10 @@ properties:
 #    type: string
 #    description: The url containing the address of the website with more information about the course
 #    format: uri
+  mtt_courseCatalogId:
+    type: string
+    description: The id of this course in the institution's course catalog
+    example: 56225
   _links:
     type: object
     required:

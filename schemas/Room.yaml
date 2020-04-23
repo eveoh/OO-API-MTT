@@ -17,6 +17,11 @@ properties:
     type: string
     description: The name of this room
     example: B20-02-035
+  mtt_name:
+    type: object
+    description: The name of this room
+    example:
+      en: B20-02-035
 #  type:
 #    type: string
 #    description: The type of this room (see service metadata for possible values)

@@ -130,3 +130,7 @@ properties:
         type: array
         description: List of the lecturers (persons) of this schedule
         $ref: 'Person.yaml'
+      mtt_scheduleType:
+        type: object
+        description: The schedule type of this schedule
+        $ref: 'MttScheduleType.yaml'

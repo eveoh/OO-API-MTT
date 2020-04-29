@@ -131,15 +131,18 @@ properties:
       courseOfferings:
         type: array
         description: List of courseOfferings affiliated to this schedule
-        $ref: 'CourseOffering.yaml'
+        items:
+          $ref: 'CourseOffering.yaml'
       rooms:
         type: array
         description: List of the room(s) of this schedule
-        $ref: 'Room.yaml'
+        items:
+          $ref: 'Room.yaml'
       lecturers:
         type: array
         description: List of the lecturers (persons) of this schedule
-        $ref: 'Person.yaml'
+        items:
+          $ref: 'Person.yaml'
       mtt_scheduleType:
         type: object
         description: The schedule type of this schedule

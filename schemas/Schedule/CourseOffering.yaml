@@ -23,7 +23,7 @@ properties:
   course:
     type: object
     description: The course object of which this courseOffering is an instance
-    $ref: 'Course.yaml'
+    $ref: './Course.yaml'
   academicYear:
     type: string
     description: The year in which this courseOffering takes place
@@ -73,11 +73,3 @@ properties:
 #            type: string
 #            format: uri
 #            example: /v3/schedules?courseOffering=123
-  _embedded:
-    type: object
-    properties:
-      mtt_groups:
-        type: array
-        description: The groups affiliated to this schedule
-        items:
-          $ref: 'MttGroup.yaml'

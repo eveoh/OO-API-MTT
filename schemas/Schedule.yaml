@@ -3,7 +3,7 @@ required:
   - scheduleId
   - startDateTime
   - endDateTime
-  - description
+  - mtt_name
   - _links
 properties:
   scheduleId:
@@ -20,23 +20,13 @@ properties:
     description: The moment on which this schedule ends, RFC3339 (date-time)
     format: date-time
     example: "2020-05-02T15:00:00+02:00"
-  abbreviation:
-    type: string
-    description: The abbreviation of this schedule
-    example: MA-101_2020_S1_LINALG_TUT01
+#  description:
+#    type: string
+#    description: The description of this schedule
+#    example: Introduction into Linear Algebra
   mtt_name:
     type: object
     description: The localized name of this schedule
-    example:
-      nl: Lineaire Algebra
-      en: Linear Algebra
-  description:
-    type: string
-    description: The description of this schedule
-    example: Introduction into Linear Algebra
-  mtt_description:
-    type: object
-    description: The localized description of this schedule
     example:
       nl: Inleiding Lineaire Algebra
       en: Introduction into Linear Algebra
@@ -128,21 +118,21 @@ properties:
   _embedded:
     type: object
     properties:
-      courseOfferings:
+      mtt_courseOfferings:
         type: array
         description: List of courseOfferings affiliated to this schedule
         items:
-          $ref: 'CourseOffering.yaml'
-      rooms:
+          $ref: 'Schedule/CourseOffering.yaml'
+      mtt_rooms:
         type: array
         description: List of the room(s) of this schedule
         items:
           $ref: 'Room.yaml'
-      lecturers:
+      mtt_lecturers:
         type: array
         description: List of the lecturers (persons) of this schedule
         items:
-          $ref: 'Person.yaml'
+          $ref: 'Schedule/Person.yaml'
       mtt_scheduleType:
         type: object
         description: The schedule type of this schedule

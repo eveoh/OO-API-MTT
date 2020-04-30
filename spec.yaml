@@ -1,6 +1,6 @@
 openapi: '3.0.2'
 info:
-  version: 3.0
+  version: "3.0"
   title: Open Education API - MyTimetable
   description: |
     OpenAPI (fka Swagger) specification for the [Open Education API](https://openonderwijsapi.nl/en/) parts supported by MyTimetable.
@@ -47,8 +47,8 @@ tags:
 #    description: The educational departments API provides the organizational department that is responsible for the execution and recognition of courses.
 #  - name: educational plans
 #    description: The educational plans API provides a coherent set of educational components, that a person is currently working on or is planning on completing. Usually based on an educationalProgramme.
-#  - name: educational programmes
-#    description: The educational programmes API provides a coherent set of educational components, aimed at the realization of  competences or objectives in the field of knowledge, insight, attitudes and skills that the person who completes the program must have.
+  - name: educational programmes
+    description: The educational programmes API provides a coherent set of educational components, aimed at the realization of  competences or objectives in the field of knowledge, insight, attitudes and skills that the person who completes the program must have.
 #  - name: course groups
 #    description: The course groups API provides collection of educational components (either courses or courseGroups) that can be offered as a whole to a person.
   - name: courses
@@ -90,10 +90,10 @@ paths:
 #    $ref: paths/EducationalPlanCollection.yaml
 #  /educational-plans/{educationalPlanId}:
 #    $ref: paths/EducationalPlanInstance.yaml
-#  /educational-programmes:
-#    $ref: paths/EducationalProgrammeCollection.yaml
-#  /educational-programmes/{educationalProgrammeId}:
-#    $ref: paths/EducationalProgrammeInstance.yaml
+  /educational-programmes:
+    $ref: paths/EducationalProgrammeCollection.yaml
+  /educational-programmes/{educationalProgrammeId}:
+    $ref: paths/EducationalProgrammeInstance.yaml
 #  /course-groups:
 #    $ref: paths/CourseGroupCollection.yaml
 #  /course-groups/{courseGroupId}:

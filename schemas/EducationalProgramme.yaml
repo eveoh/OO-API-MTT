@@ -2,18 +2,28 @@ type: object
 required:
   - educationalProgrammeId
   - name
+  - mtt_name
   - termStartDate
   - _links
 properties:
   educationalProgrammeId:
     type: string
     description: Unique id for this educational programme
+    example: CIV-ENG-FT
   name:
     type: string
     description: The name of this educational programme
-  description:
-    type: string
-    description: The description of this educational programme
+    example: Civil Engineering
+  mtt_name:
+    type: object
+    description: The localized name of this educational programme
+    example:
+      nl: Civiele Techniek
+      en: Civil Engineering
+#  description:
+#    type: string
+#    description: The description of this educational programme
+#    example: null
   termStartDate:
     type: string
     description: The day on which this educational programme starts, RFC3339 (full-date)
@@ -22,40 +32,43 @@ properties:
     type: string
     description: The day on which this educational programme ends, RFC3339 (full-date)
     format: date
-  ects:
-    type: number
-    description: The number of EC's that can be archieved in this educational plan
-    format: int32
-    minimum: 0
-  mainLanguage:
-    type: string
-    description: The main language in which the courses within this education plan are given, RFC3066
-    example: nl-NL
-  qualificationAwarded:
-    type: string
-    description: Type of qualificaton that can be obtained on finishing the programme
-    example: Bachelor of Arts, or Bachelor of Nursing
-  lenghtOfProgramme:
-    type: number
-    description: The lenght of the programme specified in months
+#  ects:
+#    type: number
+#    description: The number of EC's that can be archieved in this educational plan
+#    format: int32
+#    minimum: 0
+#    example: 180
+#  mainLanguage:
+#    type: string
+#    description: The main language in which the courses within this education plan are given, RFC3066
+#    example: nl-NL
+#  qualificationAwarded:
+#    type: string
+#    description: Type of qualificaton that can be obtained on finishing the programme
+#    example: Bachelor of Arts, or Bachelor of Nursing
+#  lenghtOfProgramme:
+#    type: number
+#    description: The lenght of the programme specified in months
+#    example: 36
   levelOfQualification:
     type: string
     description: Level of qualification according to the National Qualification Framework and the European Qualifications Framework
-    example: E.g. Bachelor’s degree; EQF for LLL level 6; NLQF level 6
-  fieldsOfStudy:
-    type: string
-    description: Field(s) of study (e.g. ISCED-F) (http://uis.unesco.org/sites/default/files/documents/isced-fields-of-education-and-training-2013-en.pdf.
-    example: e.g. 0732 Building and civil engineering
-  profileOfProgramme:
-    type: string
-    description:  brief description of the main focus of the programme.
-  programmeLearningOutcomes:
-    type: string
-    description: List the learning outcomes at programme level. It is advisable to limit the number of learning outcomes to approximately 20. It is also advisable to make sure that the programme learning outcomes in the course catalogue correspond with those on the Diploma Supplement.
-  modeOfStudy:
-    type: string
-    description: Indicate whether the programme is e.g. full-time, part-time, dual, e-learning.
-    example: full-time, part-time, dual, e-learning.
+#    example: E.g. Bachelor’s degree; EQF for LLL level 6; NLQF level 6
+    example: Bachelor
+#  fieldsOfStudy:
+#    type: string
+#    description: Field(s) of study (e.g. ISCED-F) (http://uis.unesco.org/sites/default/files/documents/isced-fields-of-education-and-training-2013-en.pdf.
+#    example: e.g. 0732 Building and civil engineering
+#  profileOfProgramme:
+#    type: string
+#    description:  brief description of the main focus of the programme.
+#  programmeLearningOutcomes:
+#    type: string
+#    description: List the learning outcomes at programme level. It is advisable to limit the number of learning outcomes to approximately 20. It is also advisable to make sure that the programme learning outcomes in the course catalogue correspond with those on the Diploma Supplement.
+#  modeOfStudy:
+#    type: string
+#    description: Indicate whether the programme is e.g. full-time, part-time, dual, e-learning.
+#    example: full-time, part-time, dual, e-learning.
   _links:
     type: object
     required:
@@ -70,7 +83,7 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/educational-programmes/123
+            example: /v3/educational-programmes/CIV-ENG-FT
       courses:
         type: object
         description: Link to the list of courses for this educational programme
@@ -80,4 +93,4 @@ properties:
           href:
             type: string
             format: uri
-            example: /v3/courses?educationalProgramme=123
+            example: /v3/courses?educationalProgramme=CIV-ENG-FT

@@ -20,10 +20,6 @@ properties:
     example:
       nl: Wiskunde 101 - 2020/21 Semester 1
       en: Math 101 - 2020/21 Semester 1
-  mtt_description:
-    type: object
-    description: The localized description of this course offering
-    example: null
   course:
     type: object
     description: The course object of which this courseOffering is an instance

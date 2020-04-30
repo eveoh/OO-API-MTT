@@ -2,6 +2,7 @@ type: object
 required:
   - courseId
   - name
+  - mtt_name
   - description
   - mainLanguage
   - _links
@@ -16,7 +17,7 @@ properties:
     example: Math 101
   mtt_name:
     type: object
-    description: <mark>The localized name of this course (ECTS-Title)</mark>
+    description: The localized name of this course (ECTS-Title)
     example:
       nl: Wiskunde 101
       en: Math 101
@@ -33,10 +34,6 @@ properties:
   description:
     type: string
     description: The description of this course (ECTS-description)
-    example: null
-  mtt_description:
-    type: object
-    description: <mark>The localized description of this course (ECTS-Title)</mark>
     example: null
 #  learningOutcomes:
 #    type: string

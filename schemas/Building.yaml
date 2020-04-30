@@ -24,14 +24,10 @@ properties:
     example:
       nl: Gebouw 20
       en: Building 20
-  description:
-    type: string
-    description: The description of this building
-    example: null
-  mtt_description:
-    type: object
-    description: The localized description of this building
-    example: null
+#  description:
+#    type: string
+#    description: The description of this building
+#    example: null
 #  address:
 #    type: string
 #    description: The streetname and number + appendix of the physical location of this building

@@ -1,0 +1,75 @@
+type: object
+required:
+  - courseOfferingId
+  - mtt_name
+  - academicYear
+  - period
+  - course
+properties:
+  courseOfferingId:
+    type: string
+    description: Unique id of this course offering
+    example: MA-101_2020_S1
+  mtt_abbreviation:
+    type: string
+    description: The abbreviation or internal code used to identify this course offering
+    example: MA-101_2020_S1
+  mtt_name:
+    type: object
+    description: The localized name of this course offering
+    example:
+      nl: Wiskunde 101 - 2020/21 Semester 1
+      en: Math 101 - 2020/21 Semester 1
+  course:
+    type: object
+    description: The course object of which this courseOffering is an instance
+    $ref: './Course.yaml'
+  academicYear:
+    type: string
+    description: The year in which this courseOffering takes place
+    example: 2020/21
+  period:
+    type: string
+    description: The period in which this courseOffering is offered
+    example: Semester 1
+  _links:
+    type: object
+    required:
+      - self
+    properties:
+      self:
+        type: object
+        description: Link to current resource
+        required:
+          - href
+        properties:
+          href:
+            type: string
+            format: uri
+            example: /v3/course-offerings/MA-101_2020_S1
+#      lecturers:
+#        type: array
+#        description: Links to the lecturers (persons) that are responsible for this course (ECTS)
+#        items:
+#          type: object
+#          required:
+#            - href
+#            - title
+#          properties:
+#            href:
+#              type: string
+#              format: uri
+#              example: /v3/persons/123
+#            title:
+#              type: string
+#              description: The display name of the person
+#      schedules:
+#        type: object
+#        description: Link to the list of schedules for this course
+#        required:
+#          - href
+#        properties:
+#          href:
+#            type: string
+#            format: uri
+#            example: /v3/schedules?courseOffering=123

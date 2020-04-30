@@ -128,17 +128,17 @@ properties:
   _embedded:
     type: object
     properties:
-      courseOfferings:
+      mtt_courseOfferings:
         type: array
         description: List of courseOfferings affiliated to this schedule
         items:
           $ref: 'CourseOffering.yaml'
-      rooms:
+      mtt_rooms:
         type: array
         description: List of the room(s) of this schedule
         items:
           $ref: 'Room.yaml'
-      lecturers:
+      mtt_lecturers:
         type: array
         description: List of the lecturers (persons) of this schedule
         items:

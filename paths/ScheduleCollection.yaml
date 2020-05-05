@@ -24,6 +24,12 @@ get:
       required: false
       schema:
         type: string
+    - name: educationalProgramme
+      in: query
+      description: Filter by educational programme (educationalProgrammeId)
+      required: false
+      schema:
+        type: string
     - name: student
       in: query
       description: Filter by student (personId)

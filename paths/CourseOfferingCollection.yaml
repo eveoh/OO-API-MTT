@@ -18,7 +18,7 @@ get:
       required: false
       schema:
         type: string
-    - name: faculty
+    - name: mtt_faculty
       in: query
       description: Filter by faculity (facultyId)
       required: false

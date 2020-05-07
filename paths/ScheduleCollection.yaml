@@ -36,6 +36,12 @@ get:
       required: false
       schema:
         type: string
+    - name: mtt_lecturer
+      in: query
+      description: Filter by lecturer (personId)
+      required: false
+      schema:
+        type: string
     - name: startDateTime
       in: query
       description: Filter by minimum startDateTime, RFC3339 (date-time)

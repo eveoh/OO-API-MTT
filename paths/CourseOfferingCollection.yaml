@@ -12,13 +12,13 @@ get:
       required: false
       schema: 
         type: string
-    - name: staff
+    - name: mtt_lecturer
       in: query
-      description: Filter by staff (personId)
+      description: Filter by lecturer (personId)
       required: false
       schema:
         type: string
-    - name: faculty
+    - name: mtt_faculty
       in: query
       description: Filter by faculity (facultyId)
       required: false

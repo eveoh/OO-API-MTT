@@ -24,7 +24,7 @@ get:
       required: false
       schema:
         type: string
-    - name: educationalProgramme
+    - name: mtt_educationalProgramme
       in: query
       description: Filter by educational programme (educationalProgrammeId)
       required: false
@@ -33,6 +33,12 @@ get:
     - name: student
       in: query
       description: Filter by student (personId)
+      required: false
+      schema:
+        type: string
+    - name: mtt_lecturer
+      in: query
+      description: Filter by lecturer (personId)
       required: false
       schema:
         type: string

@@ -14,19 +14,19 @@ get:
         type: string
     - name: mtt_lecturer
       in: query
-      description: Filter by lecturer (personId)
+      description: <mark>Filter by lecturer (personId)</mark>
       required: false
       schema:
         type: string
     - name: mtt_faculty
       in: query
-      description: Filter by faculity (facultyId)
+      description: <mark>Filter by faculity (facultyId)</mark>
       required: false
       schema:
         type: string
     - name: mtt_educationalProgramme
       in: query
-      description: Filter by educational programme (educationalProgrammeId)
+      description: <mark>Filter by educational programme (educationalProgrammeId)</mark>
       required: false
       schema:
         type: string

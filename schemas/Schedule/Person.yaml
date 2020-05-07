@@ -82,21 +82,21 @@ properties:
 #  office:
 #    type: string
 #    description: The name of the office where this person is located
-  _links:
-    type: object
-    required:
-      - self
-    properties:
-      self:
-        type: object
-        description: Link to current resource
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /v3/persons/S562423
+#  _links:
+#    type: object
+#    required:
+#      - self
+#    properties:
+#      self:
+#        type: object
+#        description: Link to current resource
+#        required:
+#          - href
+#        properties:
+#          href:
+#            type: string
+#            format: uri
+#            example: /v3/persons/S562423
 #      educationalDepartments:
 #        type: object
 #        description: Link to the list of educational departments with which this person is affiliated

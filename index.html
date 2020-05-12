@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Open Education API - MyTimetable</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+  <title>Open Education API Reference Documentation - MyTimetable extension</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-content img {
+      padding: 24px;
+    }
+  </style>
 </head>
 <body>
-    <div id="redoc-container"></div>
+  <redoc spec-url="spec.yaml" expand-responses="200" json-sample-expand-level="all" disable-search hide-hostname></redoc>
 
-    <script src="assets/js/redoc.standalone.js"></script>
-
-    <script>
-        Redoc.init('spec.yaml', {}, document.getElementById('redoc-container'))
-    </script>
+  <script src="assets/js/redoc.standalone.js"></script>
 </body>
 </html>

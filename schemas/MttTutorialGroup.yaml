@@ -1,0 +1,20 @@
+type: object
+required:
+  - groupId
+  - name
+properties:
+  tutorialGroupId:
+    type: string
+    description: Unique id of this tutorial group
+    example: TUT01
+  abbreviation:
+    type: string
+    description: The abbreviation or internal code used to identify this tutorial group
+    example: TUT01
+  name:
+    type: object
+    description: The name of this tutorial group
+    example:
+      nl: Werkgroup 01
+      en: Tutorial 01
+# TODO Could include a _link to self, but we do not need an endpoint to retrieve tutorial groups. Therefore, the links are ommitted.

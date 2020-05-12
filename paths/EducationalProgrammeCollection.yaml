@@ -21,7 +21,7 @@ get:
         type: string
     - name: mtt_faculty
       in: query
-      description: Filter by faculity (facultyId)
+      description: <mark>Filter by faculity (facultyId)</mark>
       required: false
       schema:
         type: string

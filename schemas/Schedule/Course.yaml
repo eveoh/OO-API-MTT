@@ -17,7 +17,7 @@ properties:
     example: Math 101
   mtt_name:
     type: object
-    description: The localized name of this course (ECTS-Title)
+    description: <mark>The localized name of this course (ECTS-Title)</mark>
     example:
       nl: Wiskunde 101
       en: Math 101
@@ -77,23 +77,23 @@ properties:
 #    format: uri
   mtt_courseCatalogId:
     type: string
-    description: The id of this course in the institution's course catalog
+    description: <mark>The id of this course in the institution's course catalog</mark>
     example: 56225
-  _links:
-    type: object
-    required:
-      - self
-    properties:
-      self:
-        type: object
-        description: Link to current resource
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /v3/courses/MA-101
+#  _links:
+#    type: object
+#    required:
+#      - self
+#    properties:
+#      self:
+#        type: object
+#        description: Link to current resource
+#        required:
+#          - href
+#        properties:
+#          href:
+#            type: string
+#            format: uri
+#            example: /v3/courses/MA-101
 #      courseOfferings:
 #        type: object
 #        description: Link to the list of courseOfferings for this course

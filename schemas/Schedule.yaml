@@ -20,19 +20,19 @@ properties:
     description: The moment on which this schedule ends, RFC3339 (date-time)
     format: date-time
     example: "2020-05-02T15:00:00+02:00"
-#  description:
-#    type: string
-#    description: The description of this schedule
-#    example: Introduction into Linear Algebra
+  description:
+    type: string
+    description: The description of this schedule
+    example: Introduction into Linear Algebra
   mtt_name:
     type: object
-    description: The localized name of this schedule
+    description: <mark>The localized name of this schedule</mark>
     example:
       nl: Inleiding Lineaire Algebra
       en: Introduction into Linear Algebra
   mtt_remark1:
     type: object
-    description: A localized remark for this schedule
+    description: <mark>A localized remark for this schedule</mark>
     example:
       nl: Neem je rekenmachine mee
       en: Please bring your calculator
@@ -51,94 +51,94 @@ properties:
             type: string
             format: uri
             example: /v3/schedules/569a9ece-329d-44b9-83c1-cc59464ad8f6
-#      courseOfferings:
-#        type: array
-#        description: Links to the coursOfferings affiliated to this schedule
-#        items:
-#          type: object
-#          required:
-#            - href
-#            - title
-#          properties:
-#            href:
-#              type: string
-#              format: uri
-#              example: /v3/course-offerings/123
-#            title:
-#              type: string
-#              description: The name of the course offering
-#      tests:
-#        type: array
-#        description: Links to the tests affiliated to this schedule
-#        items:
-#          type: object
-#          required:
-#            - href
-#            - title
-#          properties:
-#            href:
-#              type: string
-#              format: uri
-#              example: /v3/tests/123
-#            title:
-#              type: string
-#              description: The name of the test
-#      rooms:
-#        type: array
-#        description: Links to the room(s) of this schedule
-#        items:
-#          type: object
-#          required:
-#            - href
-#            - title
-#          properties:
-#            href:
-#              type: string
-#              format: uri
-#              example: /v3/rooms/123
-#            title:
-#              type: string
-#              description: The name of the room
-#      lecturers:
-#        type: array
-#        description: Links to the lecturers (persons) of this schedule
-#        items:
-#          type: object
-#          required:
-#            - href
-#            - title
-#          properties:
-#            href:
-#              type: string
-#              format: uri
-#              example: /v3/persons/123
-#            title:
-#              type: string
-#              description: The name of the person
+      courseOfferings:
+        type: array
+        description: Links to the coursOfferings affiliated to this schedule
+        items:
+          type: object
+          required:
+            - href
+            - title
+          properties:
+            href:
+              type: string
+              format: uri
+              example: /v3/course-offerings/123
+            title:
+              type: string
+              description: The name of the course offering
+      tests:
+        type: array
+        description: Links to the tests affiliated to this schedule
+        items:
+          type: object
+          required:
+            - href
+            - title
+          properties:
+            href:
+              type: string
+              format: uri
+              example: /v3/tests/123
+            title:
+              type: string
+              description: The name of the test
+      rooms:
+        type: array
+        description: Links to the room(s) of this schedule
+        items:
+          type: object
+          required:
+            - href
+            - title
+          properties:
+            href:
+              type: string
+              format: uri
+              example: /v3/rooms/123
+            title:
+              type: string
+              description: The name of the room
+      lecturers:
+        type: array
+        description: Links to the lecturers (persons) of this schedule
+        items:
+          type: object
+          required:
+            - href
+            - title
+          properties:
+            href:
+              type: string
+              format: uri
+              example: /v3/persons/123
+            title:
+              type: string
+              description: The name of the person
   _embedded:
     type: object
     properties:
       mtt_courseOfferings:
         type: array
-        description: List of courseOfferings affiliated to this schedule
+        description: <mark>List of courseOfferings affiliated to this schedule</mark>
         items:
           $ref: 'Schedule/CourseOffering.yaml'
       mtt_rooms:
         type: array
-        description: List of the room(s) of this schedule
+        description: <mark>List of the room(s) of this schedule</mark>
         items:
           $ref: 'Room.yaml'
       mtt_lecturers:
         type: array
-        description: List of the lecturers (persons) of this schedule
+        description: <mark>List of the lecturers (persons) of this schedule</mark>
         items:
           $ref: 'Schedule/Person.yaml'
       mtt_scheduleType:
         type: object
-        description: The schedule type of this schedule
+        description: <mark>The schedule type of this schedule</mark>
         $ref: 'MttScheduleType.yaml'
       mtt_groups:
         type: array
-        description: The groups affiliated to this schedule
+        description: <mark>The groups affiliated to this schedule</mark>
         items:
           $ref: 'MttGroup.yaml'

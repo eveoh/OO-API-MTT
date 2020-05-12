@@ -19,12 +19,12 @@ properties:
     example: B20-02-035
   mtt_name:
     type: object
-    description: The name of this room
+    description: <mark>The name of this room</mark>
     example:
       en: B20-02-035
-#  type:
-#    type: string
-#    description: The type of this room (see service metadata for possible values)
+  type:
+    type: string
+    description: The type of this room (see service metadata for possible values)
   description:
     type: string
     description: The description of this room
@@ -34,14 +34,14 @@ properties:
     format: int32
     description: The total number of seats located in the room
     example: 24
-#  totalWorkspaces:
-#    type: integer
-#    format: int32
-#    description: The total number of workspaces located in the room
-#  availableWorkspaces:
-#    type: integer
-#    format: int32
-#    description: The total number of available (=non-reserved) workspaces in the room
+  totalWorkspaces:
+    type: integer
+    format: int32
+    description: The total number of workspaces located in the room
+  availableWorkspaces:
+    type: integer
+    format: int32
+    description: The total number of available (=non-reserved) workspaces in the room
   _links:
     type: object
     required:
@@ -57,22 +57,17 @@ properties:
             type: string
             format: uri
             example: /v3/rooms/B20-02-035
-#      building:
-#        type: object
-#        description: Link to the building in which the room is located
-#        required:
-#          - href
-#          - title
-#        properties:
-#          href:
-#            type: string
-#            format: uri
-#            example: /v3/buildings/123
-#          title:
-#            type: string
-#            description: The name of the building
-#  _embedded:
-#    properties:
-#      building:
-#        type: object
-#        description: The building in which the room is located
+      building:
+        type: object
+        description: Link to the building in which the room is located
+        required:
+          - href
+          - title
+        properties:
+          href:
+            type: string
+            format: uri
+            example: /v3/buildings/123
+          title:
+            type: string
+            description: The name of the building

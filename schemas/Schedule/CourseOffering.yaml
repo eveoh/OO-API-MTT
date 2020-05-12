@@ -12,11 +12,11 @@ properties:
     example: MA-101_2020_S1
   mtt_abbreviation:
     type: string
-    description: The abbreviation or internal code used to identify this course offering
+    description: <mark>The abbreviation or internal code used to identify this course offering</mark>
     example: MA-101_2020_S1
   mtt_name:
     type: object
-    description: The localized name of this course offering
+    description: <mark>The localized name of this course offering</mark>
     example:
       nl: Wiskunde 101 - 2020/21 Semester 1
       en: Math 101 - 2020/21 Semester 1
@@ -24,6 +24,18 @@ properties:
     type: object
     description: The course object of which this courseOffering is an instance
     $ref: './Course.yaml'
+#  maxNumberStudents:
+#    type: number
+#    description: The maximum number of students allowd to enroll for this course offering
+#    format: int32
+#    minimum: 0
+#    example: 20
+#  currentNumberStudents:
+#    type: number
+#    description: The number of students that have already enrolled for this course offering
+#    format: int32
+#    minimum: 0
+#    example: 15
   academicYear:
     type: string
     description: The year in which this courseOffering takes place
@@ -32,21 +44,21 @@ properties:
     type: string
     description: The period in which this courseOffering is offered
     example: Semester 1
-  _links:
-    type: object
-    required:
-      - self
-    properties:
-      self:
-        type: object
-        description: Link to current resource
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /v3/course-offerings/MA-101_2020_S1
+#  _links:
+#    type: object
+#    required:
+#      - self
+#    properties:
+#      self:
+#        type: object
+#        description: Link to current resource
+#        required:
+#          - href
+#        properties:
+#          href:
+#            type: string
+#            format: uri
+#            example: /v3/course-offerings/MA-101_2020_S1
 #      lecturers:
 #        type: array
 #        description: Links to the lecturers (persons) that are responsible for this course (ECTS)

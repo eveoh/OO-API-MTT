@@ -14,7 +14,7 @@
     "redoc-cli": "0.9.8"
   },
   "scripts": {
-    "build": "rm -rf build && mkdir -p build/assets/js && cp -r parameters build && cp -r paths build && cp -r schemas build && cp spec.yaml build && cp docs/index.html build && cp node_modules/redoc/bundles/redoc.standalone.js build/assets/js",
+    "build": "rm -rf build && mkdir -p build/assets/js && cp -r parameters build && cp -r paths build && cp -r schemas build && cp spec.yaml build && cp docs.html build/index.html && cp logo.png build && cp node_modules/redoc/bundles/redoc.standalone.js build/assets/js",
     "serve": "redoc-cli serve --watch --port 3000 spec.yaml"
   },
   "dependencies": {

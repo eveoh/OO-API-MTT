@@ -137,8 +137,8 @@ properties:
         type: object
         description: <mark>The schedule type of this schedule</mark>
         $ref: 'MttScheduleType.yaml'
-      mtt_groups:
+      mtt_tutorialGroups:
         type: array
-        description: <mark>The groups affiliated to this schedule</mark>
+        description: <mark>The tutorial groups affiliated to this schedule</mark>
         items:
-          $ref: 'MttGroup.yaml'
+          $ref: 'MttTutorialGroup.yaml'

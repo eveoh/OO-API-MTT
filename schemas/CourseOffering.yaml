@@ -88,8 +88,8 @@ properties:
   _embedded:
     type: object
     properties:
-      mtt_groups:
+      mtt_tutorialGroups:
         type: array
-        description: <mark>The groups affiliated to this schedule</mark>
+        description: <mark>The tutorial groups affiliated to this schedule</mark>
         items:
-          $ref: 'MttGroup.yaml'
+          $ref: 'MttTutorialGroup.yaml'

@@ -50,6 +50,10 @@ properties:
     type: number
     description: The lenght of the programme specified in months
     example: 36
+  mtt_level:
+    type: string
+    description: <mark>Level of the programme</mark>.
+    example: Bachelor
   levelOfQualification:
     type: string
     description: Level of qualification according to the National Qualification Framework and the European Qualifications Framework

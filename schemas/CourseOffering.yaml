@@ -88,6 +88,10 @@ properties:
   _embedded:
     type: object
     properties:
+      mtt_course:
+        type: object
+        description: <mark>The course object of which this courseOffering is an instance</mark>
+        $ref: 'Course.yaml'
       mtt_tutorialGroups:
         type: array
         description: <mark>The tutorial groups affiliated to this schedule</mark>

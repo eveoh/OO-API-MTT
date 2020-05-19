@@ -127,7 +127,7 @@ properties:
         type: array
         description: <mark>List of the room(s) of this schedule</mark>
         items:
-          $ref: 'Room.yaml'
+          $ref: 'Schedule/Room.yaml'
       mtt_lecturers:
         type: array
         description: <mark>List of the lecturers (persons) of this schedule</mark>

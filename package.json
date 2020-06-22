@@ -18,6 +18,6 @@
     "serve": "redoc-cli serve --watch --port 3000 spec.yaml"
   },
   "dependencies": {
-    "redoc": "2.0.0-rc.29"
+    "redoc": "2.0.0-rc.30"
   }
 }

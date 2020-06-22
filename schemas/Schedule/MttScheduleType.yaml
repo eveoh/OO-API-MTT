@@ -21,18 +21,3 @@ properties:
     type: string
     description: The color of this schedule type
     example: "#ff0000"
-  _links:
-    type: object
-    required:
-      - self
-    properties:
-      self:
-        type: object
-        description: Link to current resource
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /v3/mtt-schedule-types/EXAM

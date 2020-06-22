@@ -58,6 +58,8 @@ tags:
     description: The rooms API provides the part of a building where an activity can take place. Including detail information on the resources available, number of seats, etc. (Updated continuously)
   - name: schedules
     description: The schedules API provides the planned learning activity visible in a student view and a lecturer view. Schedules provide the answer to who, what, when, where, additional information for a learnign activity. (Updated on ad hoc-base)
+  - name: schedule types
+    description: The schedule types API provides the types of activities used in schedules, such as lectures, tutorials and exams.
   - name: news feeds
     description: The news feeds API provides An aggregation of news items regarding a specific theme. (Updated on ad hoc-base)
   - name: news items
@@ -117,6 +119,8 @@ paths:
     $ref: paths/RoomInstance.yaml
   /schedules:
     $ref: paths/ScheduleCollection.yaml
+  /mtt-schedule-typs:
+    $ref: paths/MttScheduleTypeCollection.yaml
   /schedules/{scheduleId}:
     $ref: paths/ScheduleInstance.yaml
   /tests:

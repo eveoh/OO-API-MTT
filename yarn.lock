@@ -258,9 +258,9 @@ better-ajv-errors@^0.6.1, better-ajv-errors@^0.6.7:
     leven "^3.1.0"
 
 binary-extensions@^2.0.0:
-  version "2.0.0"
-  resolved "https://maven.eveoh.nl/repository/public-npm/binary-extensions/-/binary-extensions-2.0.0.tgz#23c0df14f6a88077f5f986c0d167ec03c3d5537c"
-  integrity sha512-Phlt0plgpIIBOGTT/ehfFnbNlfsDEiqmzE2KRXoX1bLIlir4X/MR+zSyBEkL05ffWgnRSf/DXv+WrUAVr93/ow==
+  version "2.1.0"
+  resolved "https://maven.eveoh.nl/repository/public-npm/binary-extensions/-/binary-extensions-2.1.0.tgz#30fa40c9e7fe07dbc895678cd287024dea241dd9"
+  integrity sha512-1Yj8h9Q+QDF5FzhMs/c9+6UntbD5MkRfRwac8DoEm9ZfUBZ7tZ55YcGVAzEe4bXsdQHEk+s9S5wsOKVdZrw0tQ==
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.4.0:
   version "4.11.9"
@@ -654,9 +654,9 @@ domain-browser@^1.1.1:
   integrity sha512-jnjyiM6eRyZl2H+W8Q/zLMA481hzi0eszAaBUzIVnmYVDBbnLxVNnfu1HgEBvCbL+71FrxMl3E6lpKH7Ge3OXA==
 
 dompurify@^2.0.8:
-  version "2.0.11"
-  resolved "https://maven.eveoh.nl/repository/public-npm/dompurify/-/dompurify-2.0.11.tgz#cd47935774230c5e478b183a572e726300b3891d"
-  integrity sha512-qVoGPjIW9IqxRij7klDQQ2j6nSe4UNWANBhZNLnsS7ScTtLb+3YdxkRY8brNTpkUiTtcXsCJO+jS0UCDfenLuA==
+  version "2.0.12"
+  resolved "https://maven.eveoh.nl/repository/public-npm/dompurify/-/dompurify-2.0.12.tgz#284a2b041e1c60b8e72d7b4d2fadad36141254ae"
+  integrity sha512-Fl8KseK1imyhErHypFPA8qpq9gPzlsJ/EukA6yk9o0gX23p1TzC+rh9LqNg1qvErRTc0UNMYlKxEGSfSh43NDg==
 
 elliptic@^6.0.0, elliptic@^6.5.2:
   version "6.5.3"
@@ -1041,9 +1041,9 @@ is-symbol@^1.0.2:
     has-symbols "^1.0.1"
 
 is-what@^3.3.1:
-  version "3.8.0"
-  resolved "https://maven.eveoh.nl/repository/public-npm/is-what/-/is-what-3.8.0.tgz#610bc46a524355f2424eb85eedc6ebbbf7e1ff8c"
-  integrity sha512-UKeBoQfV8bjlM4pmx1FLDHdxslW/1mTksEs8ReVsilPmUv5cORd4+2/wFcviI3cUjrLybxCjzc8DnodAzJ/Wrg==
+  version "3.9.1"
+  resolved "https://maven.eveoh.nl/repository/public-npm/is-what/-/is-what-3.9.1.tgz#37e222f46ae8e8169031be988ae0312295b94c8f"
+  integrity sha512-NWaAEnoBpkneRo5rKu7Bd9qMYNgifFMBb5uy/y8UXryruTEJMbrhcn8eCnopRnEbY3/ycD9PD34Y5Qg9bUvr3w==
 
 isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
@@ -1836,10 +1836,10 @@ redoc@2.0.0-rc.29:
     tslib "^1.11.1"
     url-template "^2.0.8"
 
-redoc@2.0.0-rc.30:
-  version "2.0.0-rc.30"
-  resolved "https://maven.eveoh.nl/repository/public-npm/redoc/-/redoc-2.0.0-rc.30.tgz#1b0fa646123656d648c4b983bad045b32e01fc32"
-  integrity sha512-HlaBKzRkNRyaQYhKOsT2ExG04ueG+mx7BdehDIswZkXRP9qmxCcDZOovuU2uUnA1JZcK3IOvV9MjAfnH4a3x8w==
+redoc@2.0.0-rc.31:
+  version "2.0.0-rc.31"
+  resolved "https://maven.eveoh.nl/repository/public-npm/redoc/-/redoc-2.0.0-rc.31.tgz#1e05a9eec6f484d607193a17bcac5d350b0d4f7a"
+  integrity sha512-C2E3UlN03Try+gCOYo2M2oS/bQzK1iukY9B/ErAkQBaCMAnMbI/vGJ8qqO+q0e6ZiEgpdcexmT8djdYx3mtxzw==
   dependencies:
     "@types/node" "^13.11.1"
     classnames "^2.2.6"
@@ -2019,9 +2019,9 @@ signal-exit@^3.0.0:
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
 slugify@^1.4.0:
-  version "1.4.0"
-  resolved "https://maven.eveoh.nl/repository/public-npm/slugify/-/slugify-1.4.0.tgz#c9557c653c54b0c7f7a8e786ef3431add676d2cb"
-  integrity sha512-FtLNsMGBSRB/0JOE2A0fxlqjI6fJsgHGS13iTuVT28kViI4JjUiNqp/vyis0ZXYcMnpR3fzGNkv+6vRlI2GwdQ==
+  version "1.4.4"
+  resolved "https://maven.eveoh.nl/repository/public-npm/slugify/-/slugify-1.4.4.tgz#2f032ffa52b1e1ca2a27737c1ce47baae3d0883a"
+  integrity sha512-N2+9NJ8JzfRMh6PQLrBeDEnVDQZSytE/W4BTC4fNNPmO90Uu58uNwSlIJSs+lmPgWsaAF79WLhVPe5tuy7spjw==
 
 source-map@^0.5.0:
   version "0.5.7"

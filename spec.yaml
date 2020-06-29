@@ -119,7 +119,7 @@ paths:
     $ref: paths/RoomInstance.yaml
   /schedules:
     $ref: paths/ScheduleCollection.yaml
-  /mtt-schedule-typs:
+  /mtt-schedule-types:
     $ref: paths/MttScheduleTypeCollection.yaml
   /schedules/{scheduleId}:
     $ref: paths/ScheduleInstance.yaml

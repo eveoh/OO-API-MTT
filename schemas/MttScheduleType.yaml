@@ -21,18 +21,4 @@ properties:
     type: string
     description: The color of this schedule type
     example: "#ff0000"
-  _links:
-    type: object
-    required:
-      - self
-    properties:
-      self:
-        type: object
-        description: Link to current resource
-        required:
-          - href
-        properties:
-          href:
-            type: string
-            format: uri
-            example: /v3/mtt-schedule-types/EXAM
+# TODO Could include a _link to self, but we do not need an endpoint to retrieve one schedule type. Therefore, the links are omitted.

@@ -1,0 +1,41 @@
+type: object
+required:
+  - termId
+  - name
+  - intervals
+properties:
+  termId:
+    type: string
+    description: Unique id of this term
+    example: 202021_P1
+  abbreviation:
+    type: string
+    description: The abbreviation or internal code used to identify this term
+    example: 202021_P1
+  name:
+    type: object
+    description: The name of this term
+    example:
+      nl: 2020/21 Periode 1
+      en: 2020/21 Period 1
+  dateIntervals:
+    type: array
+    description: The date interval(s) that span this term. At least one date interval needs to be specified. Multiple
+      intervals can be specified, e.g. to leave out holidays.
+    items:
+      type: object
+      required:
+        - startDate
+        - endDate
+      properties:
+        startDate:
+          type: string
+          description: The day on which this interval starts, RFC3339 (full-date)
+          format: date
+          example: "2020-09-07"
+        endDate:
+          type: string
+          description: The day on which this interval ends, RFC3339 (full-date). `endDate` > `startDate`
+          format: date
+          example: "2020-12-18"
+# TODO Could include a _link to self, but we do not need an endpoint to retrieve one term. Therefore, the links are omitted.

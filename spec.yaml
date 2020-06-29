@@ -60,6 +60,8 @@ tags:
     description: The schedules API provides the planned learning activity visible in a student view and a lecturer view. Schedules provide the answer to who, what, when, where, additional information for a learnign activity. (Updated on ad hoc-base)
   - name: schedule types
     description: The schedule types API provides the types of activities used in schedules, such as lectures, tutorials and exams.
+  - name: terms
+    description: The terms API provides the educational terms offered by the institution.
   - name: news feeds
     description: The news feeds API provides An aggregation of news items regarding a specific theme. (Updated on ad hoc-base)
   - name: news items
@@ -119,7 +121,7 @@ paths:
     $ref: paths/RoomInstance.yaml
   /schedules:
     $ref: paths/ScheduleCollection.yaml
-  /mtt-schedule-typs:
+  /mtt-schedule-types:
     $ref: paths/MttScheduleTypeCollection.yaml
   /schedules/{scheduleId}:
     $ref: paths/ScheduleInstance.yaml
@@ -127,6 +129,8 @@ paths:
     $ref: paths/TestCollection.yaml
   /tests/{testId}:
     $ref: paths/TestInstance.yaml
+  /mtt-terms:
+    $ref: paths/MttTermCollection.yaml
   /news-feeds:
     $ref: paths/NewsFeedCollection.yaml
   /news-feeds/{newsFeedId}:

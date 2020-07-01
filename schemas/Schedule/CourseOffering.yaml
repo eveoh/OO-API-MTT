@@ -16,7 +16,11 @@ properties:
     example: MA-101_2020_S1
   mtt_name:
     type: object
-    description: <mark>The localized name of this course offering</mark>
+    description: >-
+      <mark>The localized name of this course offering</mark>
+
+
+      Locale keys are represented as [BCP47](https://tools.ietf.org/html/bcp47) language tags.
     example:
       nl: Wiskunde 101 - 2020/21 Semester 1
       en: Math 101 - 2020/21 Semester 1

@@ -20,7 +20,13 @@ properties:
     example: Civil Engineering and Geosciences
   mtt_name:
     type: object
-    description: <mark>The localized name of this faculty</mark>
+    description: >-
+      <mark>The localized name of this faculty</mark>
+
+
+      Locale keys are represented as [BCP47](https://tools.ietf.org/html/bcp47) language tags.
+    additionalProperties:
+      type: string
     example:
       nl: Civiele Techniek en Geowetenschappen
       en: Civil Engineering and Geosciences

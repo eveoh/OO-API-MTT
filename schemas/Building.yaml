@@ -20,7 +20,13 @@ properties:
     example: Building 20
   mtt_name:
     type: object
-    description: <mark>The localized name of this building</mark>
+    description: >-
+      <mark>The localized name of this building</mark>
+
+
+      Locale keys are represented as [BCP47](https://tools.ietf.org/html/bcp47) language tags.
+    additionalProperties:
+      type: string
     example:
       nl: Gebouw 20
       en: Building 20

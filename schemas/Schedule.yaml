@@ -26,13 +26,25 @@ properties:
     example: Introduction into Linear Algebra
   mtt_name:
     type: object
-    description: <mark>The localized name of this schedule</mark>
+    description: >-
+      <mark>The localized name of this schedule</mark>
+
+
+      Locale keys are represented as [BCP47](https://tools.ietf.org/html/bcp47) language tags.
+    additionalProperties:
+      type: string
     example:
       nl: Inleiding Lineaire Algebra
       en: Introduction into Linear Algebra
   mtt_remark1:
     type: object
-    description: <mark>A localized remark for this schedule</mark>
+    description: >-
+      <mark>A localized remark for this schedule</mark>
+
+
+      Locale keys are represented as [BCP47](https://tools.ietf.org/html/bcp47) language tags.
+    additionalProperties:
+      type: string
     example:
       nl: Neem je rekenmachine mee
       en: Please bring your calculator

@@ -43,9 +43,9 @@ properties:
         - member
         - affiliate
         - organization
-      example:
-        - member
-        - staff
+    example:
+      - member
+      - staff
   mail:
     type: string
     description: The e-mailaddress of this person

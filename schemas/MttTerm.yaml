@@ -35,7 +35,7 @@ properties:
           example: "2020-09-07"
         endDate:
           type: string
-          description: The day on which this interval ends, RFC3339 (full-date). `endDate` > `startDate`
+          description: The day on which this interval ends (inclusive), RFC3339 (full-date). `endDate` > `startDate`
           format: date
           example: "2020-12-18"
 # TODO Could include a _link to self, but we do not need an endpoint to retrieve one term. Therefore, the links are omitted.

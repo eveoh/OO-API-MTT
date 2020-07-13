@@ -16,7 +16,7 @@ get:
       content:
         application/hal+json:
           schema:
-            $ref: '../schemas/CourseOffering.yaml'
+            $ref: '../schemas/CourseOfferingDetails.yaml'
     '404':
       description: Not Found
       content:

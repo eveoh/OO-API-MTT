@@ -98,3 +98,8 @@ properties:
         type: object
         description: <mark>The course object of which this courseOffering is an instance</mark>
         $ref: 'CourseOffering/Course.yaml'
+      mtt_tutorialGroups:
+        type: array
+        description: <mark>The tutorial groups affiliated to this schedule</mark>
+        items:
+          $ref: 'MttTutorialGroup.yaml'

@@ -12,6 +12,37 @@ info:
     - The error response format has been changed to be compatible with [RFC7807](https://tools.ietf.org/html/rfc7807)
     - MyTimetable accepts all responses with Content-Type `application/json` as well
 
+    ## Localization
+
+    MyTimetable is capable of handling localised properties, such as:
+
+    ```
+      "localised_property_1": {
+        "en": "Math 101",
+        "nl": "Wiskunde 101"
+      },
+      "localised_property_2": {
+        "en": "Math 101"
+      },
+      "localised_property_that_is_not_required": null
+    ```
+
+    Localised properties are a key-value map, where the keys must be [BCP47](https://tools.ietf.org/html/bcp47) language tags.
+    If a value is not available for a given locale, the locale must be left out of the map.
+    For a required property, the default locale must be in the response.
+
+    The following responses are __incorrect__:
+
+    ```
+      "localised_property_with_default_locale_en": {
+        "nl": "The default locale 'en' is not set"
+      },
+      "localised_property_with_null_values": {
+        "en": "The missing locale must not be in this map:",
+        "nl": null
+      }
+    ```
+
     # Hypermedia API
     The Open Education API is designed as a *hypermedia API*. In short, this means all responses will contain hypermedia links
     to simplify the navigation between the different API calls. Each link (except `self`) is optional. When a specific link is

@@ -14,7 +14,11 @@ properties:
     example: 202021_P1
   name:
     type: object
-    description: The name of this term
+    description: >-
+      The localized name of this term
+
+
+      Locale keys are represented as [BCP47](https://tools.ietf.org/html/bcp47) language tags.
     example:
       nl: 2020/21 Periode 1
       en: 2020/21 Period 1

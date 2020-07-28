@@ -13,7 +13,11 @@ properties:
     example: EXAM
   name:
     type: object
-    description: The name of this schedule type
+    description: >-
+      The localized name of this schedule type
+
+
+      Locale keys are represented as [BCP47](https://tools.ietf.org/html/bcp47) language tags.
     example:
       nl: Examen
       en: Exam

@@ -1,0 +1,32 @@
+type: object
+required:
+  - scheduleTypeGroupId
+  - name
+properties:
+  scheduleTypeGroupId:
+    type: string
+    description: Unique id of this schedule type group
+    example: EXAMS
+  abbreviation:
+    type: string
+    description: The abbreviation or internal code used to identify this schedule type group
+    example: EXAMS
+  name:
+    type: object
+    description: >-
+      The localized name of this schedule type group
+
+
+      Locale keys are represented as [BCP47](https://tools.ietf.org/html/bcp47) language tags.
+    example:
+      nl: Examens
+      en: Exams
+  _embedded:
+    type: object
+    properties:
+      mtt_scheduleTypes:
+        type: array
+        description: The schedule types that are part of this group
+        items:
+          $ref: 'MttScheduleType.yaml'
+# TODO Could include a _link to self, but we do not need an endpoint to retrieve one schedule type. Therefore, the links are omitted.

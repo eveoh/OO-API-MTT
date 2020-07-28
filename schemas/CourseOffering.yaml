@@ -91,10 +91,4 @@ properties:
             type: string
             format: uri
             example: /v3/schedules?courseOffering=123
-  _embedded:
-    type: object
-    properties:
-      mtt_course:
-        type: object
-        description: <mark>The course object of which this courseOffering is an instance</mark>
-        $ref: 'CourseOffering/Course.yaml'
+

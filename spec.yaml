@@ -63,6 +63,8 @@ tags:
     description: The rooms API provides the part of a building where an activity can take place. Including detail information on the resources available, number of seats, etc. (Updated continuously)
   - name: schedules
     description: The schedules API provides the planned learning activity visible in a student view and a lecturer view. Schedules provide the answer to who, what, when, where, additional information for a learnign activity. (Updated on ad hoc-base)
+  - name: schedule type groups
+    description: The schedule types groups API provides grouping of schedule types. This is useful to have, for example, schedule types 'Exam' and 'Resit' and group them into one group 'Exams'.
   - name: schedule types
     description: The schedule types API provides the types of activities used in schedules, such as lectures, tutorials and exams.
   - name: terms
@@ -128,6 +130,8 @@ paths:
     $ref: paths/ScheduleCollection.yaml
   /mtt-schedule-types:
     $ref: paths/MttScheduleTypeCollection.yaml
+  /mtt-schedule-type-groups:
+    $ref: paths/MttScheduleTypeGroupCollection.yaml
   /schedules/{scheduleId}:
     $ref: paths/ScheduleInstance.yaml
   /tests:

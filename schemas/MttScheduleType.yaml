@@ -6,17 +6,21 @@ properties:
   scheduleTypeId:
     type: string
     description: Unique id of this schedule type
-    example: EXAM
+    example: EXAM_RESIT
   abbreviation:
     type: string
     description: The abbreviation or internal code used to identify this schedule type
-    example: EXAM
+    example: EXAM_RESIT
   name:
     type: object
-    description: The name of this schedule type
+    description: >-
+      The localized name of this schedule type
+
+
+      Locale keys are represented as [BCP47](https://tools.ietf.org/html/bcp47) language tags.
     example:
-      nl: Examen
-      en: Exam
+      nl: Hertentamen
+      en: Resit
   color:
     type: string
     description: The color of this schedule type

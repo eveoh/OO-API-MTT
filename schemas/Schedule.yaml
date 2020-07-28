@@ -144,7 +144,7 @@ properties:
         type: array
         description: <mark>List of the lecturers (persons) of this schedule</mark>
         items:
-          $ref: 'Schedule/Person.yaml'
+          $ref: 'Person.yaml'
       mtt_scheduleType:
         type: object
         description: <mark>The schedule type of this schedule</mark>
